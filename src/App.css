@@ -1,3 +1,5 @@
+
+
 .App {
   text-align: center;
 }
@@ -35,4 +37,458 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.main {
+  margin: 0.5%;
+}
+
+.box1 {
+  border-width: thin;
+  border-style: solid;
+  border-radius: 10px;
+  margin: 5%;
+  text-align: center;
+  padding: 2%;
+
+  min-width: 100px;
+}
+
+.box2{
+  border-width: thin;
+  border-style: solid;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2px;
+  
+}
+
+.lineBlack {
+  
+  height: 3px;
+  width: 100%;
+  background-color: black;
+
+ 
+}
+
+.tooltipp {
+  position: relative;
+  display: inline-block;
+
+}
+.tooltipp .tooltiptext {
+  visibility: visible !important;  
+  text-align: center;
+  position: absolute;
+  padding: 10px;
+  border: solid 1px #000;
+  color: red;
+  top: -57px;
+    left: -5px;
+  /* Position the tooltip */
+  
+  z-index: 1;
+}
+
+.tooltipp:hover .tooltiptext {
+  visibility: visible !important;
+}
+
+.box-diagram {
+
+padding: 3% 2%;
+margin-top: 10px;
+
+
+}
+
+.circle {
+  border-width: thin;
+  border-style: solid;
+  text-align: center;
+  
+}
+
+.col {
+  padding : 0!important
+}
+
+.col-1 {
+  padding : 0!important
+}
+
+.col-2 {
+  padding : 0!important
+}
+
+.col-3 {
+  padding : 0!important
+}
+
+
+.component-box {
+  height: 550px;
+  margin-top: 10px;
+  
+  
+  border: solid 2px;
+  border-color: #000;
+
+}
+
+.component2 {
+
+  min-height: inherit;
+  max-height: inherit;
+
+  
+}
+
+.component4 {
+
+  min-height: inherit;
+  max-height: inherit;
+
+  
+}
+
+.title-box {
+
+  min-height: 70px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #cf99db;
+}
+
+.safeguards-box {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+
+.BLEVE-box {
+
+  border-width: thin;
+  border-style: solid;
+  border-radius: 10px;
+  text-align: center;
+  padding: 2%;
+
+}
+
+
+.FCCU-box {
+
+  display: flex;
+  padding: 0% 2%;
+ 
+}
+
+#Crude_Boilover-box {
+  display: flex;
+  margin-top: 30px;
+}
+
+
+.CBoilover-flexbox1 {
+
+  width: 80px;
+}
+
+.CBoilover-flexbox2{
+  position: relative;
+}
+
+.CBoilover-flexbox3{
+  position: relative;
+  margin-left: 20px;
+}
+
+.CBoilover-flexbox4{
+  position: relative;
+ 
+}
+
+.CBoilOver_tank2{
+
+   position: relative;
+   bottom: 26%;
+}
+
+.CBoilOver_tanksbox{
+  position: relative;
+  top: 80px;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+#RDMaintenance {
+  width: 70px;
+}
+
+
+
+
+.circle { width: 100%; border-radius: 50%; }
+
+.circle::after { content: ""; display: block; padding-bottom: 100%; }
+
+
+.circle { 
+  position: relative; line-height: 1; 
+}
+
+
+.circle .txt { 
+  position: absolute; bottom: 35%; width: 100%; text-align: center; 
+}
+
+
+
+
+.FCCU_CIRCLE {
+    width: 300px;
+    height: 150px;
+    border-style: solid;
+    border-radius: 50%;
+    border-width: thin;  
+    padding: 30px;
+    text-align: center;
+
+    position: relative;
+    top: 41px;
+    right: 22px;
+}
+
+
+#Detection {
+  position: absolute;
+  top: 240px;
+  left: -10px;
+}
+
+#Mitigation {
+  position: absolute;
+  top: 240px;
+  left: 100px;
+}
+
+#Emergency {
+  position: absolute;
+  top: -21px;
+  left: 17px;
+  width: 100px;
+  font-size: 12px;
+}
+
+#Containment {
+  position: absolute;
+  top: -21px;
+  left: 133px;
+}
+#PreChecks {
+  position: absolute;
+  width: 90px;
+  left: 15px;
+  
+  
+}
+
+
+#CBoilOver_CIRCLE {
+  width: 140px;
+  height: 150px;
+  margin-left: 30px;
+
+  font-size: 15px;
+
+  border-style: solid;
+  border-radius: 50%;
+  border-width: thin;  
+  padding: 30px;
+  text-align: center;
+
+  position: relative;
+  top: 39px;
+
+ 
+}
+
+#Boilover {
+  padding: 2%;
+  position: relative;
+  top: 94px;
+  
+}
+
+#ContainsMaterial{
+  margin: 8px;
+}
+
+#ongeplande {
+  position: relative;
+  top: 7.5%;
+}
+
+#geplande {
+  position: relative;
+  top: 17%;
+}
+
+#Equipment_damage {
+  position: relative;
+  top: 2.5%;
+}
+
+#fatalities {
+  position: relative;
+  top: 10%;
+}
+
+#e1 {
+  position: absolute;
+    left: 955px;
+    top: 199px;
+}
+
+#e2 {
+  position: absolute;
+    left: 955px;
+    top: 299px;
+}
+
+#e3 {
+  position: absolute;
+    left: 992px;
+    top: 195px;
+}
+
+#e4 {
+  position: absolute;
+  left: 1075px;
+  
+  top: 195px;
+}
+
+#e5 {
+  position: absolute;
+    left: 992px;
+    top: 296px;
+}
+
+#e6 {
+  position: absolute;
+  left: 1075px;
+  
+  top: 296px;
+}
+
+#e7 {
+  position: absolute;
+  left: 1112px;
+  
+  top: 296px;
+}
+
+#e8 {
+  position: absolute;
+  left: 1112px;
+  
+  top: 195px;
+}
+
+#e9 {
+  position: absolute;
+  right: 252px;
+  
+  top: 195px;
+}
+
+#e10 {
+  position: absolute;
+  right: 252px;
+  
+  top: 296px;
+}
+
+#e11 {
+  position: absolute;
+  right: 218px;
+  
+  top: 195px;
+}
+
+#e12 {
+  position: absolute;
+  right: 218px;
+  
+  top: 296px;
+}
+
+#e13 {
+  position: absolute;
+  right: 140px;
+  
+  top: 296px;
+}
+
+#e14 {
+  position: absolute;
+  left: 955px;
+  
+  top: 763px;
+}
+
+#e16 {
+  position: absolute;
+  left: 955px;
+  
+  top: 925px;
+}
+
+#e15 {
+  position: absolute;
+  left: 917px;
+  
+  top: 926px;
+}
+
+#e17 {
+  position: absolute;
+  left: 988px;
+  
+  top: 925px;
+}
+
+#e18{
+  position: absolute;
+  left: 990px;
+  
+  top: 763px;
+}
+
+#e19{
+  position: absolute;
+  left: 1070px;
+  
+  top: 763px;
+}
+#e20{
+
+  position: absolute;
+  left: 1063px;
+  
+  top: 925px;
+}
+
+#e21{
+  position: absolute;
+  left: 1077px;
+  
+  top: 925px;
 }
