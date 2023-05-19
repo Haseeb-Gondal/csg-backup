@@ -153,6 +153,14 @@ margin-top: 10px;
   
 }
 
+.component5 {
+
+  min-height: inherit;
+  height: 100%;
+
+  
+}
+
 .title-box {
 
   min-height: 70px;
@@ -266,11 +274,69 @@ margin-top: 10px;
 }
 
 
+.Liquid_OverFill-box{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  position: relative;
+
+
+  
+
+
+}
+#overfillActive {
+  position: relative;
+  bottom: 5%;
+}
+
 #Detection {
   position: absolute;
   top: 240px;
   left: -10px;
 }
+
+.LOverfill_tank3 {
+  position: relative;
+  top: 17%;
+}
+
+
+.LOverfill_tank4 {
+  position: relative;
+  top: 17%;
+}
+
+.LOverfill-flexbox1 {
+
+  width: 15%
+
+}
+
+.LOverfill-flexbox4 {
+
+  width: 30%
+  
+}
+.LOverfill-flexbox3 {
+
+  width: 20%
+  
+}
+
+.LOverfill-flexbox5 {
+
+  width: 10%
+  
+}
+
+.LOverfill-flexbox6 {
+
+  width: 15%
+  
+}
+
+
 
 #Mitigation {
   position: absolute;
@@ -319,6 +385,27 @@ margin-top: 10px;
  
 }
 
+
+#LOverfill_CIRCLE {
+  width: 170px;
+  height: 160px;
+ 
+
+  font-size: 15px;
+
+  border-style: solid;
+  border-radius: 50%;
+  border-width: thin;  
+  padding: 30px;
+  text-align: center;
+
+  
+
+ 
+}
+
+
+
 #Boilover {
   padding: 2%;
   position: relative;
@@ -350,10 +437,46 @@ margin-top: 10px;
   top: 10%;
 }
 
+#ATG {
+  position: absolute;
+  
+  left: 100px;
+
+  width: 25%;
+}
+
+#ILHA {
+  position: absolute;
+  width: 12%;
+  top: 40%;
+  left: 28%;
+  font-size: 13px;
+}
+
+#fillingPlan {
+  position: absolute;
+  top: 40%;
+}
+
+#inspectionPlan {
+  position: absolute;
+  bottom: 10%;
+}
+
+.LOverfill_tank5 {
+  position: relative;
+  top: 4%;
+}
+
+#remoteIsolation {
+  position: absolute;
+  bottom: 20%;
+  width: 10%;
+}
+
 #e1 {
   position: absolute;
-    left: 955px;
-    top: 199px;
+   
 }
 
 #e2 {
@@ -492,3 +615,28 @@ margin-top: 10px;
   
   top: 925px;
 }
+
+#e22{
+  position: absolute;
+  left: 50%;
+  
+  
+}
+
+#e26{
+  position: absolute;
+  left: 352px;
+  top: 1376px;
+  
+  
+}
+#e27{
+ position: absolute;
+  left: 345px;
+  top: 285px;
+  
+}
+
+
+
+
