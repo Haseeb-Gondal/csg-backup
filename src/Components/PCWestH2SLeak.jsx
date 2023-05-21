@@ -1,30 +1,13 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Safeguards from "./Safeguards";
 
 export default function PCWestH2SLeak() {
   return (
     <fragment>
       <div className="title-box">PCWestH2SLeak</div>
 
-      <div className="safeguards-box">
-        <div
-          className="col"
-          style={{ display: "flex", justifyContent: " center" }}
-        >
-          <div style={{ padding: "3px", backgroundColor: "rgb(137 165 255)" }}>
-            Preventative Safeguards
-          </div>
-        </div>
-
-        <div
-          className="col"
-          style={{ display: "flex", justifyContent: " center" }}
-        >
-          <div style={{ padding: "3px", backgroundColor: "rgb(137 165 255)" }}>
-            Migitative Safeguards
-          </div>
-        </div>
-      </div>
+      <Safeguards></Safeguards>
 
       <div className="row box-diagram">
         <div className="col-2 d-flex justify-content-center align-items-center  ">

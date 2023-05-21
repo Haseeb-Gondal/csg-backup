@@ -1,5 +1,7 @@
 import React, { Fragment } from "react";
 import Xarrow from "react-xarrows";
+import Safeguards from "./Safeguards";
+
 
 export default function Crude_BoilOver() {
   return (
@@ -9,25 +11,7 @@ export default function Crude_BoilOver() {
         <div> OM-S301 / OM-S302 / OM-S303 / OM-S304 / OM-S305 </div>{" "}
       </div>
 
-      <div className="safeguards-box">
-        <div
-          className="col"
-          style={{ display: "flex", justifyContent: " center" }}
-        >
-          <div style={{ padding: "3px", backgroundColor: "rgb(137 165 255)" }}>
-            Preventative Safeguards
-          </div>
-        </div>
-
-        <div
-          className="col"
-          style={{ display: "flex", justifyContent: " center" }}
-        >
-          <div style={{ padding: "3px", backgroundColor: "rgb(137 165 255)" }}>
-            Migitative Safeguards
-          </div>
-        </div>
-      </div>
+      <Safeguards></Safeguards>
 
       <div id="Crude_Boilover-box">
         <div className="d-flex flex-column CBoilover-flexbox1  ">
@@ -105,7 +89,7 @@ export default function Crude_BoilOver() {
 
         <div className="d-flex flex-column  CBoilover-flexbox2">
           <div className="d-flex flex-row align-items-center CBoilOver_tanksbox">
-            <div className="CBoilOver_tank3">
+            <div >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -127,7 +111,7 @@ export default function Crude_BoilOver() {
                 />
               </svg>
             </div>
-            <div className="CBoilOver_tank3">
+            <div >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -149,7 +133,7 @@ export default function Crude_BoilOver() {
                 />
               </svg>
             </div>
-            <div className="CBoilOver_tank3">
+            <div >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -171,7 +155,7 @@ export default function Crude_BoilOver() {
                 />
               </svg>
             </div>
-            <div className="CBoilOver_tank3">
+            <div >
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 xmlnsXlink="http://www.w3.org/1999/xlink"

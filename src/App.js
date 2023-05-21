@@ -6,6 +6,7 @@ import OnsiteBLEVE from './Components/OnsiteBLEVE'
 import FCCU_R_Flow from './Components/FCCU_R_Flow';
 import Crude_BoilOver from './Components/Crude_BoilOver';
 import Liquid_Overfill from './Components/Liquid_Overfill';
+import OffsiteBLEVE from './Components/OffsiteBLEVE';
 
 
 // const handleFunction = () => {
@@ -107,7 +108,16 @@ function App() {
 
                         <div className='component-box'>
 
-                                    
+                        
+
+
+                                  <div className='component5'>
+
+                                          <OffsiteBLEVE></OffsiteBLEVE>
+                                  </div>
+      
+      
+
                                 
                         </div>
                   </div>

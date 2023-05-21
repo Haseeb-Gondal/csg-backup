@@ -129,6 +129,7 @@ margin-top: 10px;
 
 .component-box {
   height: 550px;
+  min-width: 760px;
   margin-top: 10px;
   
   
@@ -161,6 +162,15 @@ margin-top: 10px;
   
 }
 
+.component6 {
+
+  min-height: inherit;
+  height: 100%;
+
+  
+}
+
+
 .title-box {
 
   min-height: 70px;
@@ -168,13 +178,20 @@ margin-top: 10px;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #cf99db;
+  background-color: #9900cc;
+  color: #ffff;
 }
 
 .safeguards-box {
   display: flex;
   margin-top: 10px;
   margin-bottom: 20px;
+}
+
+.safeguards {
+  padding: 3px;
+  background-color: #2e75b6;
+  color: white;
 }
 
 
@@ -187,6 +204,17 @@ margin-top: 10px;
   text-align: center;
   padding: 2%;
 
+}
+
+.OffBLEVE-mainbox {
+  height: 100%;
+}
+
+.OffBLEVE-box{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  padding: 6% 0%
 }
 
 
@@ -235,8 +263,63 @@ margin-top: 10px;
   margin-right: 10px;
 }
 
+
 #RDMaintenance {
   width: 70px;
+}
+
+
+
+
+
+.OffBLEVE-flexbox1 {
+  width: 14%;
+  min-width: 14%;
+}
+
+.OffBLEVE-flexbox2 {
+
+      
+}
+.OffBLEVE-flexbox3 {
+  width: 18%;
+}
+.OffBLEVE-flexbox4 {
+  width: 23%;
+
+}
+.OffBLEVE-flexbox {}
+.OffBLEVE-flexbox6 {
+  
+  width: 10%;
+    padding: 0% 0.3% 0% 2%;
+
+}
+
+.OffBLEVE_tanksbox1{
+  position: relative;
+  top: 4%;
+}
+
+.OffBLEVE_tanksbox2{
+  position: relative;
+  top: 5%;
+}
+
+.OffBLEVE_tank1{
+  position: relative;
+  top: 4%;
+}
+
+.OffBLEVE_tank2{
+  position: relative;
+  top: 13%;
+}
+
+
+.OffBLEVE_tank5{
+  position: relative;
+  top: 9%;
 }
 
 
@@ -404,6 +487,21 @@ margin-top: 10px;
  
 }
 
+.OffBLEVE_CIRCLE {
+  width: 139px;
+  height: 119px;
+ 
+
+  font-size: 15px;
+
+  border-style: solid;
+  border-radius: 50%;
+  border-width: thin;  
+  padding: 30px;
+  text-align: center;
+
+}
+
 
 
 #Boilover {
@@ -472,6 +570,16 @@ margin-top: 10px;
   position: absolute;
   bottom: 20%;
   width: 10%;
+}
+
+#BLEVE2{
+
+  border-width: thin;
+  border-style: solid;
+  border-radius: 18%;
+  text-align: center;
+  padding: 3%;
+  
 }
 
 #e1 {

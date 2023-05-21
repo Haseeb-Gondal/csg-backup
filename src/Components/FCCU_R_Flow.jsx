@@ -1,31 +1,13 @@
 import React, { Fragment } from "react";
 import Xarrow from "react-xarrows";
-import { arrowShapes } from "react-xarrows";
+import Safeguards from "./Safeguards";
 
 export default function FCCU_R_Flow() {
   return (
     <Fragment>
       <div className="title-box">FCCU Reverse Flow</div>
 
-      <div className="safeguards-box">
-        <div
-          className="col"
-          style={{ display: "flex", justifyContent: " center" }}
-        >
-          <div style={{ padding: "3px", backgroundColor: "rgb(137 165 255)" }}>
-            Preventative Safeguards
-          </div>
-        </div>
-
-        <div
-          className="col"
-          style={{ display: "flex", justifyContent: " center" }}
-        >
-          <div style={{ padding: "3px", backgroundColor: "rgb(137 165 255)" }}>
-            Migitative Safeguards
-          </div>
-        </div>
-      </div>
+      <Safeguards></Safeguards>
 
       <div className="FCCU-box">
 

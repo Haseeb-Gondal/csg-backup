@@ -1,5 +1,6 @@
 import React from "react";
 import Xarrow from "react-xarrows";
+import Safeguards from "./Safeguards";
 
 export default function Liquid_Overfill() {
   return (
@@ -10,25 +11,7 @@ export default function Liquid_Overfill() {
         <div> OM-S101 / OM-S102 / OM-S104 </div>
       </div>
 
-      <div className="safeguards-box">
-        <div
-          className="col"
-          style={{ display: "flex", justifyContent: " center" }}
-        >
-          <div style={{ padding: "3px", backgroundColor: "rgb(137 165 255)" }}>
-            Preventative Safeguards
-          </div>
-        </div>
-
-        <div
-          className="col"
-          style={{ display: "flex", justifyContent: " center" }}
-        >
-          <div style={{ padding: "3px", backgroundColor: "rgb(137 165 255)" }}>
-            Migitative Safeguards
-          </div>
-        </div>
-      </div>
+      <Safeguards></Safeguards>
 
       <div className="Liquid_OverFill-box">
         <div className="d-flex flex-column justify-content-evenly  LOverfill-flexbox1">
