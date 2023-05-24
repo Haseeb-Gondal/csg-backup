@@ -60,6 +60,7 @@
   border-radius: 10px;
   text-align: center;
   padding: 2px;
+  font-size: 75%;
   
 }
 
@@ -97,9 +98,8 @@
 
 .box-diagram {
 
-padding: 3% 2%;
-margin-top: 10px;
 
+  padding: 3%;
 
 }
 
@@ -142,7 +142,7 @@ margin-top: 10px;
 
   min-height: inherit;
   max-height: inherit;
-
+  height: 100%;
   
 }
 
@@ -195,6 +195,46 @@ margin-top: 10px;
 }
 
 
+.OnBLEVE-box{
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+
+  padding: 1%;
+  position: relative;
+  
+}
+
+
+
+.OnBLEVE-flexbox1 {
+
+  width: 20%;
+}
+
+.OnBLEVE-flexbox2 {
+
+  width: 40%;
+}
+
+.OnBLEVE-flexbox3 {
+
+  width: 20%;
+}
+
+.OnBLEVE-flexbox4 {
+
+  width: 20%;
+}
+
+.OnBLEVE-flexbox5 {
+
+  width: 10%;
+}
+
+
+
+
 
 .BLEVE-box {
 
@@ -202,7 +242,7 @@ margin-top: 10px;
   border-style: solid;
   border-radius: 10px;
   text-align: center;
-  padding: 2%;
+  padding: 7%;
 
 }
 
@@ -210,11 +250,22 @@ margin-top: 10px;
   height: 100%;
 }
 
+.OnBLEVE-mainbox {
+  height: 100%;
+}
+
+
+
+
+
 .OffBLEVE-box{
   display: flex;
   flex-direction: row;
   flex-grow: 1;
-  padding: 6% 0%
+  padding: 6% 0%;
+
+
+  position: relative;
 }
 
 
@@ -278,17 +329,18 @@ margin-top: 10px;
 }
 
 .OffBLEVE-flexbox2 {
-
+position: relative;
       
 }
 .OffBLEVE-flexbox3 {
+  position: relative;
   width: 18%;
 }
 .OffBLEVE-flexbox4 {
   width: 23%;
 
 }
-.OffBLEVE-flexbox {}
+
 .OffBLEVE-flexbox6 {
   
   width: 10%;
@@ -313,7 +365,7 @@ margin-top: 10px;
 
 .OffBLEVE_tank2{
   position: relative;
-  top: 13%;
+  top: 10%;
 }
 
 
@@ -352,7 +404,7 @@ margin-top: 10px;
     text-align: center;
 
     position: relative;
-    top: 41px;
+    top: 20px;
     right: 22px;
 }
 
@@ -418,6 +470,25 @@ margin-top: 10px;
   width: 15%
   
 }
+
+
+
+#veselBLEVE {
+
+     position: absolute;
+     top: 17%;
+     left: 69%;
+     width: 15%;
+}
+
+#fireproofing1 {
+  position: absolute;
+  left: 53%;
+  top: 27%;
+
+}
+
+
 
 
 
@@ -487,6 +558,25 @@ margin-top: 10px;
  
 }
 
+
+#significantLoss {
+  width: 65%;
+  height: 32%;
+ 
+
+  font-size: 15px;
+
+  border-style: solid;
+  border-radius: 50%;
+  border-width: thin;  
+  padding: 30px;
+  text-align: center;
+
+  
+
+ 
+}
+
 .OffBLEVE_CIRCLE {
   width: 139px;
   height: 119px;
@@ -517,17 +607,17 @@ margin-top: 10px;
 
 #ongeplande {
   position: relative;
-  top: 7.5%;
+  top:3.5%;
 }
 
 #geplande {
   position: relative;
-  top: 17%;
+  top: 14.5%;
 }
 
 #Equipment_damage {
   position: relative;
-  top: 2.5%;
+  top: 0%;
 }
 
 #fatalities {
@@ -582,9 +672,111 @@ margin-top: 10px;
   
 }
 
+#mechanicalIntegrity_1{
+  position: relative;
+  bottom: 2.5%;
+}
+
+#waterDrawACTIVE{
+  position: relative;
+  bottom: 1.5%;
+}
+
+#liquidOverfill{
+  position: relative;
+  top: 0.5%;
+}
+
+#fillingPlan1 {
+  position: absolute;
+  top: 1%;
+  left: 12%;
+  
+
+}
+
+#inspectionPlan1{
+  position: absolute;
+  top: 61%;
+  left: 15%;
+  
+  
+}
+
+#ATG1{
+  position: absolute;
+  top: 1%;
+  left: 24%;
+}
+
+#IHLA1{
+  position: absolute;
+  top: 35%;
+  left: 23%;
+  
+  
+}
+
+#waterDrawFacilities{
+  position: absolute;
+  bottom: 1%;
+  left: 15%;
+  width: 25%;
+  font-size: 75%;
+  
+  
+}
+
+
+#fireproofing{
+  position: absolute;
+  bottom: 33%;
+  left: 66%;
+
+  font-size: 75%;
+  
+  
+}
+
+#remoteIsolation1{
+  position: absolute;
+  bottom: 23%;
+  left: 78%;
+  
+  font-size: 75%;
+  
+  
+}
+
+#firewater{
+  position: absolute;
+  top: 23%;
+  left: 78%;
+  width: 11%;
+  font-size: 75%;
+  
+  
+  
+  
+}
+
+#FG {
+  position: absolute;
+  top: 12%;
+  left: 60%;
+  width: 15%;
+  font-size: 60%;
+  
+  
+  
+  
+}
+
+
 #e1 {
   position: absolute;
-   
+  top: 195px;
+  left: 957px;
 }
 
 #e2 {
@@ -745,6 +937,18 @@ margin-top: 10px;
   
 }
 
+#e28{
+  position: absolute;
+   top: 14.2%;
+   left: 85%;
+ }
+
+ #e29{
+  position: absolute;
+  top: 88.3%;
+   left: 85%;
+   
+ }
 
 
 

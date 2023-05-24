@@ -1,13 +1,16 @@
 {
+  "homepage": "https://ishareteam3.na.xom.com/sites/BUD_STol/SToI%20SP%20-%20Shared%20Documents/Projects/CSG_registry_Kiosk/Deployment%20test",
   "name": "csg",
   "version": "0.1.0",
   "private": true,
+  
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^5.2.3",
     "react": "^18.2.0",
+    "react-app-polyfill": "^3.0.0",
     "react-dom": "^18.2.0",
     "react-scripts": "5.0.1",
     "react-xarrows": "^2.0.2",
@@ -27,15 +30,16 @@
   },
   "browserslist": {
     "production": [
-      ">0.2%",
+      "> 0.2%",
       "not dead",
-      "not op_mini all"
+      "not op_mini all",
+      "last 1 ie version"
     ],
     "development": [
       "last 1 chrome version",
       "last 1 firefox version",
-      "last 1 safari version"
+      "last 1 safari version",
+      "last 1 ie version"
     ]
   }
 }
-

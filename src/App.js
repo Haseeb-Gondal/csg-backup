@@ -127,13 +127,16 @@ function App() {
                 
                 <div className='row'>
                   <div className='col-lg-6'>
-                        <div className='component3 component-box'>
+                        <div className='component7 component-box'>
                                 
                                 
                         </div>
                   </div>
                   <div className='col-lg-6'>
-                      
+                                <div className='component8 component-box'>
+                                
+                                
+                                </div>
                   </div>
                 </div>
 

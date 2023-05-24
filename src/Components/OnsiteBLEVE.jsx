@@ -1,105 +1,172 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Xarrow from "react-xarrows";
 
 export default function OnsiteBLEVE() {
   return (
-    <div>
-      <div className="title-box">OMS301BO OM-S301</div>
+    <div className="d-flex flex-column  OnBLEVE-mainbox">
+      <div className="title-box">
+        Onsite BLEVE <div> N1-D101 / N1-D201 / N2-D102 </div>{" "}
+      </div>
 
-      <div className="row box-diagram">
-        <div className="col-2 d-flex justify-content-center align-items-center  ">
-          <div className="box1">
-            Mechanical Integrity/ Loss of pump seal/ Brittle fracture /Test Text
-            here
+      <div className="OnBLEVE-box">
+        <div className=" d-flex justify-content-center align-items-center OnBLEVE-flexbox1  ">
+          <div id="mechanicalIntegrity1" className="box1">
+            Mechanical Integrity/ Loss of pump seal/ Brittle fracture
           </div>
         </div>
 
-        <div className="col d-flex justify-content-center align-items-center ">
-          <div className="lineBlack"></div>
-        </div>
+        <div className=" d-flex justify-content-center align-items-center OnBLEVE-flexbox2">
+          {/* <div id="significantLoss" class="circle">
+              <div class="txt">
+                Significant loss of Containment and fire with potential to
+                impinge on vessel
+              </div>
+            </div> */}
 
-        <div className="col-3 d-flex justify-content-center align-items-center">
-          {/* <div className='circle rounded-circle'> Significant loss of Containment and fire with potential to impinge on vessel</div>
-           */}
-
-          <div class="circle">
-            <div class="txt">
-              Significant loss of Containment and fire with potential to impinge
+          <div id="significantLoss" className="LOverfill_CIRCLE">
+            <p>
+              Tignificant loss of Containment and fire with potential to impinge
               on vessel
-            </div>
+            </p>
           </div>
         </div>
 
-        <div className="col d-flex justify-content-center align-items-center ">
-          <div className="lineBlack"></div>
-        </div>
-
-        <div className="col-1 d-flex flex-column justify-content-center ">
-          {/* <div className='tooltipp' >
-
-                  <span className='tooltiptext'>CSG : Fire Proofing</span> 
+        <div className=" d-flex flex-column justify-content-center OnBLEVE-flexbox3">
+          
 
 
-
-
-
-
-                  </div> */}
 
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            viewBox="170 30 150 450"
+            width="60px"
+            height="80px"
+            viewBox="-20 0  100 100"
+            preserveAspectRatio="xMinYMin meet"
           >
             <path
-              d="M-4,-2.5v5q0,2,4,2t4,-2v-5q0,2,-4,2t-4,-2q0,-2,4,-2t4,2t-4,2t-4,-2Z"
+              id="OnBLEVE_tank1"
+              d="M-4,-2.5v5q0,1,4,1t4,-1v-5q0,1,-4,1t-4,-1q0,-1,4,-1t4,1t-4,1t-4,-1Z"
               style={{
                 fill: "none",
                 stroke: "black",
                 vectorEffect: "non-scaling-stroke",
                 strokeWidth: "1px",
               }}
-              id="e1_shape"
-              transform="matrix(0 -26.3488 13.1122 0 240.628 247.205)"
+              transform="matrix(0 -15.3097 9.55166 0 42.3194 66.5285)"
             />
           </svg>
         </div>
 
-        <div className="col d-flex justify-content-center align-items-center">
-          <div className="lineBlack"></div>
+        <div className=" d-flex flex-column justify-content-center OnBLEVE-flexbox4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            xmlnsXlink="http://www.w3.org/1999/xlink"
+            width="60px"
+            height="80px"
+            viewBox="-20 0  100 100"
+            preserveAspectRatio="xMinYMin meet"
+          >
+            <path
+              id="OnBLEVE_tank2"
+              d="M-4,-2.5v5q0,1,4,1t4,-1v-5q0,1,-4,1t-4,-1q0,-1,4,-1t4,1t-4,1t-4,-1Z"
+              style={{
+                fill: "none",
+                stroke: "black",
+                vectorEffect: "non-scaling-stroke",
+                strokeWidth: "1px",
+              }}
+              transform="matrix(0 -15.3097 9.55166 0 42.3194 66.5285)"
+            />
+          </svg>
         </div>
 
-        <div className="col-1 d-flex flex-column justify-content-center ">
-          <div className="tooltipp">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              xmlnsXlink="http://www.w3.org/1999/xlink"
-              viewBox="170 30 150 450"
-            >
-              <path
-                d="M-4,-2.5v5q0,2,4,2t4,-2v-5q0,2,-4,2t-4,-2q0,-2,4,-2t4,2t-4,2t-4,-2Z"
-                style={{
-                  fill: "none",
-                  stroke: "black",
-                  vectorEffect: "non-scaling-stroke",
-                  strokeWidth: "1px",
-                }}
-                id="e1_shape"
-                transform="matrix(0 -26.3488 13.1122 0 240.628 247.205)"
-              />
-            </svg>
-
-            <span className="tooltiptext">CSG : Vessel BLEVE Response</span>
+        <div className="   d-flex justify-content-center align-items-center OnBLEVE-flexbox5">
+          <div id="OnBLEVE_BLEVEbox" className="BLEVE-box">
+            BLEVE{" "}
           </div>
+        
+        
         </div>
+        
+        
+        
+        
+        <div id="fireproofing1" className="box2">CSG: Fireproofing</div>
 
-        <div className="col d-flex justify-content-center align-items-center">
-          <div className="lineBlack"></div>
-        </div>
+        <div id="veselBLEVE" className="box2">CSG: Vesel BLEVE Response</div>
 
-        <div className="col-2   d-flex justify-content-center align-items-center">
-          <div className="BLEVE-box">BLEVE </div>
-        </div>
+
+
+        <Xarrow
+          headSize={0}
+          color="black"
+          start="mechanicalIntegrity1"
+          end="significantLoss"
+          path="straight"
+          endAnchor={{
+            position: "left",
+          }}
+        ></Xarrow>
+
+        <Xarrow
+          headSize={0}
+          color="black"
+          start="significantLoss"
+          end="OnBLEVE_tank1"
+          path="straight"
+          endAnchor={{
+            position: "left",
+          }}
+        ></Xarrow>
+
+        <Xarrow
+          headSize={0}
+          color="black"
+          start="OnBLEVE_tank1"
+          end="OnBLEVE_tank2"
+          path="straight"
+          endAnchor={{
+            position: "left",
+          }}
+        ></Xarrow>
+
+        <Xarrow
+          headSize={0}
+          color="black"
+          start="OnBLEVE_tank2"
+          end="OnBLEVE_BLEVEbox"
+          path="straight"
+          endAnchor={{
+            position: "left",
+          }}
+        ></Xarrow>
+
+        <Xarrow
+          headSize={0}
+          color="black"
+          start="OnBLEVE_tank1"
+          end="fireproofing1"
+          path="straight"
+          endAnchor={{
+            position: "bottom",
+          }}
+        ></Xarrow>
+
+        <Xarrow
+          headSize={0}
+          color="black"
+          start="OnBLEVE_tank2"
+          end="veselBLEVE"
+          path="straight"
+          endAnchor={{
+            position: "bottom",
+          }}
+        ></Xarrow>  
+
+
+
       </div>
     </div>
   );
