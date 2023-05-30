@@ -1,13 +1,30 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Xarrow from "react-xarrows";
+import Safeguards from "./Safeguards";
+import Title from "./common/Title";
 
-export default function OnsiteBLEVE() {
+export default function OnsiteBLEVE(props) {
+
+  const { nonFunctioningVessel: nonFuncVessel } = props;
+
+  function handleTankColor() {
+
+ 
+
+  return "functioning"
+
+}
+
+
+ 
+
   return (
     <div className="d-flex flex-column  OnBLEVE-mainbox">
-      <div className="title-box">
-        Onsite BLEVE <div> N1-D101 / N1-D201 / N2-D102 </div>{" "}
-      </div>
+       <Title ScenarioName="Onsite BLEVE" Vessel={nonFuncVessel} DefaultTitle=" N1-D101 / N1-D201 / N2-D102 ">
+        
+        </Title>
+      
 
       <div className="OnBLEVE-box">
         <div className=" d-flex justify-content-center align-items-center OnBLEVE-flexbox1  ">
@@ -17,26 +34,17 @@ export default function OnsiteBLEVE() {
         </div>
 
         <div className=" d-flex justify-content-center align-items-center OnBLEVE-flexbox2">
-          {/* <div id="significantLoss" class="circle">
-              <div class="txt">
-                Significant loss of Containment and fire with potential to
-                impinge on vessel
-              </div>
-            </div> */}
+          
 
           <div id="significantLoss" className="LOverfill_CIRCLE">
             <p>
-              Tignificant loss of Containment and fire with potential to impinge
+              Significant loss of Containment and fire with potential to impinge
               on vessel
             </p>
           </div>
         </div>
 
         <div className=" d-flex flex-column justify-content-center OnBLEVE-flexbox3">
-          
-
-
-
           <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -46,13 +54,11 @@ export default function OnsiteBLEVE() {
             preserveAspectRatio="xMinYMin meet"
           >
             <path
+              className= {handleTankColor()}
               id="OnBLEVE_tank1"
               d="M-4,-2.5v5q0,1,4,1t4,-1v-5q0,1,-4,1t-4,-1q0,-1,4,-1t4,1t-4,1t-4,-1Z"
               style={{
-                fill: "none",
-                stroke: "black",
-                vectorEffect: "non-scaling-stroke",
-                strokeWidth: "1px",
+                vectorEffect: "non-scaling-stroke"
               }}
               transform="matrix(0 -15.3097 9.55166 0 42.3194 66.5285)"
             />
@@ -86,18 +92,15 @@ export default function OnsiteBLEVE() {
           <div id="OnBLEVE_BLEVEbox" className="BLEVE-box">
             BLEVE{" "}
           </div>
-        
-        
         </div>
-        
-        
-        
-        
-        <div id="fireproofing1" className="box2">CSG: Fireproofing</div>
 
-        <div id="veselBLEVE" className="box2">CSG: Vesel BLEVE Response</div>
+        <div id="fireproofing1" className="box2">
+          CSG: Fireproofing
+        </div>
 
-
+        <div id="veselBLEVE" className="box2">
+          CSG: Vesel BLEVE Response
+        </div>
 
         <Xarrow
           headSize={0}
@@ -163,10 +166,7 @@ export default function OnsiteBLEVE() {
           endAnchor={{
             position: "bottom",
           }}
-        ></Xarrow>  
-
-
-
+        ></Xarrow>
       </div>
     </div>
   );

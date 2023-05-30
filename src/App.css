@@ -1,5 +1,3 @@
-
-
 .App {
   text-align: center;
 }
@@ -34,6 +32,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -54,23 +53,23 @@
   min-width: 100px;
 }
 
-.box2{
+.box2 {
   border-width: thin;
   border-style: solid;
   border-radius: 10px;
   text-align: center;
   padding: 2px;
   font-size: 75%;
-  
+
 }
 
 .lineBlack {
-  
+
   height: 3px;
   width: 100%;
   background-color: black;
 
- 
+
 }
 
 .tooltipp {
@@ -78,17 +77,18 @@
   display: inline-block;
 
 }
+
 .tooltipp .tooltiptext {
-  visibility: visible !important;  
+  visibility: visible !important;
   text-align: center;
   position: absolute;
   padding: 10px;
   border: solid 1px #000;
   color: red;
   top: -57px;
-    left: -5px;
+  left: -5px;
   /* Position the tooltip */
-  
+
   z-index: 1;
 }
 
@@ -107,23 +107,23 @@
   border-width: thin;
   border-style: solid;
   text-align: center;
-  
+
 }
 
 .col {
-  padding : 0!important
+  padding: 0 !important
 }
 
 .col-1 {
-  padding : 0!important
+  padding: 0 !important
 }
 
 .col-2 {
-  padding : 0!important
+  padding: 0 !important
 }
 
 .col-3 {
-  padding : 0!important
+  padding: 0 !important
 }
 
 
@@ -131,8 +131,8 @@
   height: 550px;
   min-width: 760px;
   margin-top: 10px;
-  
-  
+
+
   border: solid 2px;
   border-color: #000;
 
@@ -143,7 +143,7 @@
   min-height: inherit;
   max-height: inherit;
   height: 100%;
-  
+
 }
 
 .component4 {
@@ -151,7 +151,7 @@
   min-height: inherit;
   max-height: inherit;
 
-  
+
 }
 
 .component5 {
@@ -159,7 +159,7 @@
   min-height: inherit;
   height: 100%;
 
-  
+
 }
 
 .component6 {
@@ -167,7 +167,7 @@
   min-height: inherit;
   height: 100%;
 
-  
+
 }
 
 
@@ -195,14 +195,14 @@
 }
 
 
-.OnBLEVE-box{
+.OnBLEVE-box {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
 
   padding: 1%;
   position: relative;
-  
+
 }
 
 
@@ -258,7 +258,7 @@
 
 
 
-.OffBLEVE-box{
+.OffBLEVE-box {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
@@ -273,7 +273,7 @@
 
   display: flex;
   padding: 0% 2%;
- 
+
 }
 
 #Crude_Boilover-box {
@@ -287,27 +287,27 @@
   width: 80px;
 }
 
-.CBoilover-flexbox2{
+.CBoilover-flexbox2 {
   position: relative;
 }
 
-.CBoilover-flexbox3{
+.CBoilover-flexbox3 {
   position: relative;
   margin-left: 20px;
 }
 
-.CBoilover-flexbox4{
+.CBoilover-flexbox4 {
   position: relative;
- 
+
 }
 
-.CBoilOver_tank2{
+.CBoilOver_tank2 {
 
-   position: relative;
-   bottom: 26%;
+  position: relative;
+  bottom: 26%;
 }
 
-.CBoilOver_tanksbox{
+.CBoilOver_tanksbox {
   position: relative;
   top: 80px;
   margin-left: 10px;
@@ -329,47 +329,49 @@
 }
 
 .OffBLEVE-flexbox2 {
-position: relative;
-      
+  position: relative;
+
 }
+
 .OffBLEVE-flexbox3 {
   position: relative;
   width: 18%;
 }
+
 .OffBLEVE-flexbox4 {
   width: 23%;
 
 }
 
 .OffBLEVE-flexbox6 {
-  
+
   width: 10%;
-    padding: 0% 0.3% 0% 2%;
+  padding: 0% 0.3% 0% 2%;
 
 }
 
-.OffBLEVE_tanksbox1{
+.OffBLEVE_tanksbox1 {
   position: relative;
   top: 4%;
 }
 
-.OffBLEVE_tanksbox2{
+.OffBLEVE_tanksbox2 {
   position: relative;
   top: 5%;
 }
 
-.OffBLEVE_tank1{
+.OffBLEVE_tank1 {
   position: relative;
   top: 4%;
 }
 
-.OffBLEVE_tank2{
+.OffBLEVE_tank2 {
   position: relative;
   top: 10%;
 }
 
 
-.OffBLEVE_tank5{
+.OffBLEVE_tank5 {
   position: relative;
   top: 9%;
 }
@@ -377,49 +379,61 @@ position: relative;
 
 
 
-.circle { width: 100%; border-radius: 50%; }
+.circle {
+  width: 100%;
+  border-radius: 50%;
+}
 
-.circle::after { content: ""; display: block; padding-bottom: 100%; }
-
-
-.circle { 
-  position: relative; line-height: 1; 
+.circle::after {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
 }
 
 
-.circle .txt { 
-  position: absolute; bottom: 35%; width: 100%; text-align: center; 
+.circle {
+  position: relative;
+  line-height: 1;
+}
+
+
+.circle .txt {
+  position: absolute;
+  bottom: 35%;
+  width: 100%;
+  text-align: center;
 }
 
 
 
 
 .FCCU_CIRCLE {
-    width: 300px;
-    height: 150px;
-    border-style: solid;
-    border-radius: 50%;
-    border-width: thin;  
-    padding: 30px;
-    text-align: center;
+  width: 300px;
+  height: 150px;
+  border-style: solid;
+  border-radius: 50%;
+  border-width: thin;
+  padding: 30px;
+  text-align: center;
 
-    position: relative;
-    top: 20px;
-    right: 22px;
+  position: relative;
+  top: 20px;
+  right: 22px;
 }
 
 
-.Liquid_OverFill-box{
+.Liquid_OverFill-box {
   display: flex;
   flex-direction: row;
   flex-grow: 1;
   position: relative;
 
 
-  
+
 
 
 }
+
 #overfillActive {
   position: relative;
   bottom: 5%;
@@ -445,40 +459,36 @@ position: relative;
 .LOverfill-flexbox1 {
 
   width: 15%
-
 }
 
 .LOverfill-flexbox4 {
 
   width: 30%
-  
 }
+
 .LOverfill-flexbox3 {
 
   width: 20%
-  
 }
 
 .LOverfill-flexbox5 {
 
   width: 10%
-  
 }
 
 .LOverfill-flexbox6 {
 
   width: 15%
-  
 }
 
 
 
 #veselBLEVE {
 
-     position: absolute;
-     top: 17%;
-     left: 69%;
-     width: 15%;
+  position: absolute;
+  top: 17%;
+  left: 69%;
+  width: 15%;
 }
 
 #fireproofing1 {
@@ -511,12 +521,13 @@ position: relative;
   top: -21px;
   left: 133px;
 }
+
 #PreChecks {
   position: absolute;
   width: 90px;
   left: 15px;
-  
-  
+
+
 }
 
 
@@ -529,64 +540,64 @@ position: relative;
 
   border-style: solid;
   border-radius: 50%;
-  border-width: thin;  
+  border-width: thin;
   padding: 30px;
   text-align: center;
 
   position: relative;
   top: 39px;
 
- 
+
 }
 
 
 #LOverfill_CIRCLE {
   width: 170px;
   height: 160px;
- 
+
 
   font-size: 15px;
 
   border-style: solid;
   border-radius: 50%;
-  border-width: thin;  
+  border-width: thin;
   padding: 30px;
   text-align: center;
 
-  
 
- 
+
+
 }
 
 
 #significantLoss {
   width: 65%;
   height: 32%;
- 
+
 
   font-size: 15px;
 
   border-style: solid;
   border-radius: 50%;
-  border-width: thin;  
+  border-width: thin;
   padding: 30px;
   text-align: center;
 
-  
 
- 
+
+
 }
 
 .OffBLEVE_CIRCLE {
   width: 139px;
   height: 119px;
- 
+
 
   font-size: 15px;
 
   border-style: solid;
   border-radius: 50%;
-  border-width: thin;  
+  border-width: thin;
   padding: 30px;
   text-align: center;
 
@@ -598,16 +609,16 @@ position: relative;
   padding: 2%;
   position: relative;
   top: 94px;
-  
+
 }
 
-#ContainsMaterial{
+#ContainsMaterial {
   margin: 8px;
 }
 
 #ongeplande {
   position: relative;
-  top:3.5%;
+  top: 3.5%;
 }
 
 #geplande {
@@ -627,7 +638,7 @@ position: relative;
 
 #ATG {
   position: absolute;
-  
+
   left: 100px;
 
   width: 25%;
@@ -662,27 +673,27 @@ position: relative;
   width: 10%;
 }
 
-#BLEVE2{
+#BLEVE2 {
 
   border-width: thin;
   border-style: solid;
   border-radius: 18%;
   text-align: center;
   padding: 3%;
-  
+
 }
 
-#mechanicalIntegrity_1{
+#mechanicalIntegrity_1 {
   position: relative;
   bottom: 2.5%;
 }
 
-#waterDrawACTIVE{
+#waterDrawACTIVE {
   position: relative;
   bottom: 1.5%;
 }
 
-#liquidOverfill{
+#liquidOverfill {
   position: relative;
   top: 0.5%;
 }
@@ -691,73 +702,73 @@ position: relative;
   position: absolute;
   top: 1%;
   left: 12%;
-  
+
 
 }
 
-#inspectionPlan1{
+#inspectionPlan1 {
   position: absolute;
   top: 61%;
   left: 15%;
-  
-  
+
+
 }
 
-#ATG1{
+#ATG1 {
   position: absolute;
   top: 1%;
   left: 24%;
 }
 
-#IHLA1{
+#IHLA1 {
   position: absolute;
   top: 35%;
   left: 23%;
-  
-  
+
+
 }
 
-#waterDrawFacilities{
+#waterDrawFacilities {
   position: absolute;
   bottom: 1%;
   left: 15%;
   width: 25%;
   font-size: 75%;
-  
-  
+
+
 }
 
 
-#fireproofing{
+#fireproofing {
   position: absolute;
   bottom: 33%;
   left: 66%;
 
   font-size: 75%;
-  
-  
+
+
 }
 
-#remoteIsolation1{
+#remoteIsolation1 {
   position: absolute;
   bottom: 23%;
   left: 78%;
-  
+
   font-size: 75%;
-  
-  
+
+
 }
 
-#firewater{
+#firewater {
   position: absolute;
   top: 23%;
   left: 78%;
   width: 11%;
   font-size: 75%;
-  
-  
-  
-  
+
+
+
+
 }
 
 #FG {
@@ -766,11 +777,32 @@ position: relative;
   left: 60%;
   width: 15%;
   font-size: 60%;
-  
-  
-  
-  
+
+
+
+
 }
+
+
+
+.Functioning {
+
+  fill: #00ff00;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+.Degraded {
+
+  fill: red;
+  stroke: black;
+  stroke-width: 1px;
+}
+
+
+
+
+
 
 
 #e1 {
@@ -781,174 +813,173 @@ position: relative;
 
 #e2 {
   position: absolute;
-    left: 955px;
-    top: 299px;
+  left: 955px;
+  top: 299px;
 }
 
 #e3 {
   position: absolute;
-    left: 992px;
-    top: 195px;
+  left: 992px;
+  top: 195px;
 }
 
 #e4 {
   position: absolute;
   left: 1075px;
-  
+
   top: 195px;
 }
 
 #e5 {
   position: absolute;
-    left: 992px;
-    top: 296px;
+  left: 992px;
+  top: 296px;
 }
 
 #e6 {
   position: absolute;
   left: 1075px;
-  
+
   top: 296px;
 }
 
 #e7 {
   position: absolute;
   left: 1112px;
-  
+
   top: 296px;
 }
 
 #e8 {
   position: absolute;
   left: 1112px;
-  
+
   top: 195px;
 }
 
 #e9 {
   position: absolute;
   right: 252px;
-  
+
   top: 195px;
 }
 
 #e10 {
   position: absolute;
   right: 252px;
-  
+
   top: 296px;
 }
 
 #e11 {
   position: absolute;
   right: 218px;
-  
+
   top: 195px;
 }
 
 #e12 {
   position: absolute;
   right: 218px;
-  
+
   top: 296px;
 }
 
 #e13 {
   position: absolute;
   right: 140px;
-  
+
   top: 296px;
 }
 
 #e14 {
   position: absolute;
   left: 955px;
-  
+
   top: 763px;
 }
 
 #e16 {
   position: absolute;
   left: 955px;
-  
+
   top: 925px;
 }
 
 #e15 {
   position: absolute;
   left: 917px;
-  
+
   top: 926px;
 }
 
 #e17 {
   position: absolute;
   left: 988px;
-  
+
   top: 925px;
 }
 
-#e18{
+#e18 {
   position: absolute;
   left: 990px;
-  
+
   top: 763px;
 }
 
-#e19{
+#e19 {
   position: absolute;
   left: 1070px;
-  
+
   top: 763px;
 }
-#e20{
+
+#e20 {
 
   position: absolute;
   left: 1063px;
-  
+
   top: 925px;
 }
 
-#e21{
+#e21 {
   position: absolute;
   left: 1077px;
-  
+
   top: 925px;
 }
 
-#e22{
+#e22 {
   position: absolute;
   left: 50%;
-  
-  
+
+
 }
 
-#e26{
+#e26 {
   position: absolute;
   left: 352px;
   top: 1376px;
-  
-  
+
+
 }
-#e27{
- position: absolute;
+
+#e27 {
+  position: absolute;
   left: 345px;
   top: 285px;
-  
+
 }
 
-#e28{
+#e28 {
   position: absolute;
-   top: 14.2%;
-   left: 85%;
- }
+  top: 14.2%;
+  left: 85%;
+}
 
- #e29{
+#e29 {
   position: absolute;
   top: 88.3%;
-   left: 85%;
-   
- }
+  left: 85%;
 
-
-
+}

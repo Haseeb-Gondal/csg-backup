@@ -1,10 +1,10 @@
-import React from "react";
+import React, { Fragment }  from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Safeguards from "./Safeguards";
 
 export default function PCWestH2SLeak() {
   return (
-    <fragment>
+    <Fragment>
       <div className="title-box">PCWestH2SLeak</div>
 
       <Safeguards></Safeguards>
@@ -122,6 +122,6 @@ export default function PCWestH2SLeak() {
           <div className="box1">Toxic Release with high consequences</div>
         </div>
       </div>
-    </fragment>
+    </Fragment>
   );
 }

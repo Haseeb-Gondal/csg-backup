@@ -1,15 +1,102 @@
-import React from "react";
+import React, {useEffect, useRef} from "react";
 import Xarrow from "react-xarrows";
 import Safeguards from "./Safeguards";
+import Title from "./common/Title";
+import Tank from "./common/Tank";
 
-export default function Liquid_Overfill() {
+
+
+
+
+
+// ToDO:  Make the id of svg tanks same as safeguard name coming from excel file 
+
+
+
+
+
+
+
+
+export default function Liquid_Overfill(props) {
+
+  
+  const {nonFunctioningVessel: nonFuncVessel } = props;
+  
+  const {safeguards} = props  //returns any array of safeguards of this vessel
+
+ 
+
+  const handleTankColor = (element) => {
+    
+     console.log(element);
+
+        console.log(props);
+     
+     safeguards?.map( (safeguard) => { console.log(safeguard);
+
+  
+            if(safeguard.name === element.current.id && safeguard.value === ("Not a Critical Safeguard" || ""))
+            {
+              element.current.style.fill = "none"
+            }  
+
+           if(safeguard.name === element.current.id && safeguard.value === "Functioning")
+            {
+              element.current.style.fill = "#00ff00"
+             }
+
+           if(safeguard.name === element.current.id && safeguard.value === "Degraded")
+            {
+              element.current.style.fill = "red"
+             }
+
+           if(safeguard.name === element.current.id && safeguard.value === "Not In Place")
+            {
+              element.current.style.fill = "#7f7f7f"
+             }
+
+           if(safeguard.name === element.current.id && safeguard.value === "PM Overdue")
+            {
+              element.current.style.fill = "red"
+             }
+
+
+          
+
+
+      } )
+
+
+  }
+
+
+   
+ 
+  
+
+ 
+
+
+
+
+
+
+  
+
+
+
+
+
+
+
+
   return (
     <div className="d-flex flex-column" style={{ height: "100%" }}>
-      <div className="title-box">
-        Liquid Overfill{" "}
-        <div> OM-S301 / OM-S302 / OM-S303 / OM-S304 / OM-S305 </div>{" "}
-        <div> OM-S101 / OM-S102 / OM-S104 </div>
-      </div>
+
+      <Title ScenarioName="Liquid OverFill" Vessel={nonFuncVessel} DefaultTitle=" OM-S301 / OM-S302 / OM-S303 / OM-S304 / OM-S305 / OM-S101 / OM-S102 / OM-S104">
+
+      </Title>
 
       <Safeguards></Safeguards>
 
@@ -88,7 +175,7 @@ export default function Liquid_Overfill() {
           <div id="ILHA" className="box2">
             CSG: ILHA Independent Level High Alarm
           </div>
-          <div className="LOverfill_tank3">
+          {/* <div className="LOverfill_tank3">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -98,10 +185,12 @@ export default function Liquid_Overfill() {
               preserveAspectRatio="xMinYMin meet"
             >
               <path
-                id="LOverfill_tank3"
+                ref={element1Ref}
+               
+                id="ATG_Automatic_Tank_Gauge"
                 d="M-4,-2.5v5q0,1,4,1t4,-1v-5q0,1,-4,1t-4,-1q0,-1,4,-1t4,1t-4,1t-4,-1Z"
                 style={{
-                  fill: "none",
+                  fill: "#00ff00" ,
                   stroke: "black",
                   vectorEffect: "non-scaling-stroke",
                   strokeWidth: "1px",
@@ -109,9 +198,21 @@ export default function Liquid_Overfill() {
                 transform="matrix(0 -15.3097 9.55166 0 42.3194 66.5285)"
               />
             </svg>
-          </div>
+          </div> */}
 
-          <div className="LOverfill_tank4">
+          <Tank 
+           ClassName="LOverfill_tank3"
+            Width="50px"
+            Height="100px"
+            ViewBox="-20 0  100 100"
+             Id="ATG_Automatic_Tank_Gauge"
+             Safeguards={safeguards}
+           
+           >
+
+          </Tank>
+
+          {/* <div className="LOverfill_tank4">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -121,10 +222,11 @@ export default function Liquid_Overfill() {
               preserveAspectRatio="xMinYMin meet"
             >
               <path
-                id="LOverfill_tank4"
+                ref={element2Ref}
+                id="ILHA_Independent_Level_High_Alarm"
                 d="M-4,-2.5v5q0,1,4,1t4,-1v-5q0,1,-4,1t-4,-1q0,-1,4,-1t4,1t-4,1t-4,-1Z"
                 style={{
-                  fill: "none",
+                  fill: "#00ff00",
                   stroke: "black",
                   vectorEffect: "non-scaling-stroke",
                   strokeWidth: "1px",
@@ -132,7 +234,20 @@ export default function Liquid_Overfill() {
                 transform="matrix(0 -15.3097 9.55166 0 42.3194 66.5285)"
               />
             </svg>
-          </div>
+          </div> */}
+
+          <Tank 
+           ClassName="LOverfill_tank4"
+            Width="50px"
+            Height="100px"
+            ViewBox="-20 0  100 100"
+             Id="ILHA_Independent_Level_High_Alarm"
+
+            Safeguards={safeguards}
+           
+           >
+
+          </Tank>
         </div>
 
         <div className="d-flex flex-column justify-content-center align-items-center  LOverfill-flexbox4">
@@ -207,7 +322,7 @@ export default function Liquid_Overfill() {
           headSize={0}
           color="black"
           start="LOverfill_tank1"
-          end="LOverfill_tank3"
+          end="ATG_Automatic_Tank_Gauge"
           path="straight"
          
         ></Xarrow>
@@ -215,8 +330,8 @@ export default function Liquid_Overfill() {
 <Xarrow
           headSize={0}
           color="black"
-          start="LOverfill_tank3"
-          end="LOverfill_tank4"
+          start="ATG_Automatic_Tank_Gauge"
+          end="ILHA_Independent_Level_High_Alarm"
           path="straight"
          
         ></Xarrow>
@@ -232,7 +347,7 @@ export default function Liquid_Overfill() {
 <Xarrow
           headSize={0}
           color="black"
-          start="LOverfill_tank3"
+          start="ATG_Automatic_Tank_Gauge"
           end="ATG"
           path="straight"
          
@@ -264,7 +379,7 @@ export default function Liquid_Overfill() {
 <Xarrow
           headSize={0}
           color="black"
-          start="LOverfill_tank4"
+          start="ILHA_Independent_Level_High_Alarm"
           end="ILHA"
           path="straight"
          
@@ -289,7 +404,7 @@ export default function Liquid_Overfill() {
         <Xarrow
           headSize={0}
           color="black"
-          start="LOverfill_tank4"
+          start="ILHA_Independent_Level_High_Alarm"
           end="e26"
           path="straight"
           endAnchor={{
